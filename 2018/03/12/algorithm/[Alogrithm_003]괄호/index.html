@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Just Do it!">
 <meta property="og:description" content="문제 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.   입">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-03-12T07:11:10.853Z">
+<meta property="og:updated_time" content="2018-03-12T07:12:31.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Alogrithm_003]괄호">
 <meta name="twitter:description" content="문제 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.   입">
@@ -438,8 +438,8 @@
 <h2 id="방법-스택-Stack-이용"><a href="#방법-스택-Stack-이용" class="headerlink" title="방법 - 스택(Stack) 이용"></a>방법 - 스택(Stack) 이용</h2><ol>
 <li><strong>스택의 마지막에 넣은것이 가장 먼저 나오는 구조</strong>를 이용한다.</li>
 <li>입력받은 <strong>문자열의 길이 만큼 Loop</strong>를 돈다.<ul>
-<li>문자 <strong>‘(‘</strong>를 발견하면 <strong>스택(Stack)에 <code>push()</code></strong></li>
-<li>문자 <strong>‘)’</strong>를 발견하면 <strong>스택(Stack)에서 <code>pop()</code></strong></li>
+<li>문자 <strong><code>(</code></strong>를 발견하면 <strong>스택(Stack)에 <code>push()</code></strong></li>
+<li>문자 <strong><code>)</code></strong>를 발견하면 <strong>스택(Stack)에서 <code>pop()</code></strong></li>
 <li>만약, Loop동안 <strong>스택의 길이가 0보다 작아</strong>지려 한다면 <code>NO</code></li>
 </ul>
 </li>
