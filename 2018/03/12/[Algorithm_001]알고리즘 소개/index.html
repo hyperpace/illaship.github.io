@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="알고리즘 소개12345678910111213141516171819202122232425#include &amp;lt;iostream&amp;gt;using namespace std;int main() &amp;#123;    int n;    cin &amp;gt;&amp;gt; n;    int* dp = new int[n+1];    for(int i = 1; i &amp;lt;= n; i++)">
+<meta name="description" content="알고리즘 소개 어떠한 문제를 해결하기위한 여러 동작들의 모임입니다.">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Algorithm_001]알고리즘 소개">
 <meta property="og:url" content="https://illaship.github.io/2018/03/12/[Algorithm_001]알고리즘 소개/index.html">
 <meta property="og:site_name" content="Just Do it!">
-<meta property="og:description" content="알고리즘 소개12345678910111213141516171819202122232425#include &amp;lt;iostream&amp;gt;using namespace std;int main() &amp;#123;    int n;    cin &amp;gt;&amp;gt; n;    int* dp = new int[n+1];    for(int i = 1; i &amp;lt;= n; i++)">
+<meta property="og:description" content="알고리즘 소개 어떠한 문제를 해결하기위한 여러 동작들의 모임입니다.">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-03-12T03:34:19.362Z">
+<meta property="og:updated_time" content="2018-03-12T03:52:46.259Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Algorithm_001]알고리즘 소개">
-<meta name="twitter:description" content="알고리즘 소개12345678910111213141516171819202122232425#include &amp;lt;iostream&amp;gt;using namespace std;int main() &amp;#123;    int n;    cin &amp;gt;&amp;gt; n;    int* dp = new int[n+1];    for(int i = 1; i &amp;lt;= n; i++)">
+<meta name="twitter:description" content="알고리즘 소개 어떠한 문제를 해결하기위한 여러 동작들의 모임입니다.">
 
 
 
@@ -415,7 +415,59 @@
       
 
       
-        <h1 id="알고리즘-소개"><a href="#알고리즘-소개" class="headerlink" title="알고리즘 소개"></a>알고리즘 소개</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">int</span>* dp = <span class="keyword">new</span> <span class="keyword">int</span>[n+<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i == <span class="number">1</span>) &#123;</span><br><span class="line">            dp[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;          </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(i == <span class="number">2</span>) &#123;</span><br><span class="line">            dp[i] = <span class="number">3</span>;</span><br><span class="line">        &#125;     </span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            dp[i] = (dp[i<span class="number">-1</span>]+(dp[i<span class="number">-2</span>]*<span class="number">2</span>)) % <span class="number">10007</span>;</span><br><span class="line">            <span class="comment">// 문제는 끝까지...</span></span><br><span class="line">            <span class="comment">// 자료형 크기가 오버되는구나...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; dp[n] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="알고리즘-소개"><a href="#알고리즘-소개" class="headerlink" title="알고리즘 소개"></a>알고리즘 소개</h1><ul>
+<li><strong>어떠한 문제를 해결하기위한 여러 동작들의 모임입니다.</strong></li>
+</ul>
+<a id="more"></a>
+<p><br></p>
+<h1 id="시간복잡도-O-개념"><a href="#시간복잡도-O-개념" class="headerlink" title="시간복잡도(O) 개념"></a>시간복잡도(O) 개념</h1><ul>
+<li><strong>시간복잡도는 입력의 크기에 대해서 최악의 경우 시간이 얼마나 걸릴지 나타내는 방법입니다.</strong></li>
+</ul>
+<blockquote>
+<h2 id="대표적인-시간-복잡도"><a href="#대표적인-시간-복잡도" class="headerlink" title="대표적인 시간 복잡도"></a>대표적인 시간 복잡도</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">시간복잡도</th>
+<th style="text-align:left">설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Ο(1)</strong></td>
+<td style="text-align:left">단순계산을 할 경우 ex) 배열에 접근하는 연산, a/b와 같은 연산.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ο(logN)</strong></td>
+<td style="text-align:left">N개를 절반으로 계속 나눌경우</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ο(N)</strong></td>
+<td style="text-align:left">중복되지 않은 for문일 경우</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>O(NlogN)</strong></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ο(N^2)</strong></td>
+<td style="text-align:left">2중 for문일 경우</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ο(N^3)</strong></td>
+<td style="text-align:left">3중 for문일 경우</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ο(2^N)</strong></td>
+<td style="text-align:left">크기가 N인 집합의 부분집합</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Ο(N!)</strong></td>
+<td style="text-align:left">크기가 N인 순열</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+
       
     </div>
     
@@ -454,6 +506,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/12/[Algorithm_002]그대로 출력하기/" rel="prev" title="[Algorithm_002]그대로 출력하기">
+                [Algorithm_002]그대로 출력하기 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -540,7 +596,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">포스트</span>
                 </a>
               </div>
@@ -605,7 +661,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#알고리즘-소개"><span class="nav-number">1.</span> <span class="nav-text">알고리즘 소개</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#알고리즘-소개"><span class="nav-number">1.</span> <span class="nav-text">알고리즘 소개</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#시간복잡도-O-개념"><span class="nav-number">2.</span> <span class="nav-text">시간복잡도(O) 개념</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#대표적인-시간-복잡도"><span class="nav-number">2.1.</span> <span class="nav-text">대표적인 시간 복잡도</span></a></li></ol></li></ol></div>
             
 
           </div>
