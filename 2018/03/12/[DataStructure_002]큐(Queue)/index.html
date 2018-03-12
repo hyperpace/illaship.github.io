@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="DataStructure," />
 
 
 
@@ -79,13 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Just Do it!">
-<meta property="og:url" content="https://illaship.github.io/archives/2018/index.html">
+<meta name="description" content="큐 소개 한쪽 끝에서만 자료를 삽입하고 반대 쪽 끝에서만 삭제할 수 있는 자료구조입니다. 먼저 넣은 것이 가장 먼저 나오기 때문에 First In First Out(FIFO)라고도 부릅니다.">
+<meta name="keywords" content="DataStructure">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[DataStructure_002]큐(Queue)">
+<meta property="og:url" content="https://illaship.github.io/2018/03/12/[DataStructure_002]큐(Queue)/index.html">
 <meta property="og:site_name" content="Just Do it!">
+<meta property="og:description" content="큐 소개 한쪽 끝에서만 자료를 삽입하고 반대 쪽 끝에서만 삭제할 수 있는 자료구조입니다. 먼저 넣은 것이 가장 먼저 나오기 때문에 First In First Out(FIFO)라고도 부릅니다.">
 <meta property="og:locale" content="ko">
+<meta property="og:image" content="https://illaship.github.io/images/dataStr/Queue.png">
+<meta property="og:updated_time" content="2018-03-12T05:25:00.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Just Do it!">
+<meta name="twitter:title" content="[DataStructure_002]큐(Queue)">
+<meta name="twitter:description" content="큐 소개 한쪽 끝에서만 자료를 삽입하고 반대 쪽 끝에서만 삭제할 수 있는 자료구조입니다. 먼저 넣은 것이 가장 먼저 나오기 때문에 First In First Out(FIFO)라고도 부릅니다.">
+<meta name="twitter:image" content="https://illaship.github.io/images/dataStr/Queue.png">
 
 
 
@@ -115,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://illaship.github.io/archives/2018/"/>
+  <link rel="canonical" href="https://illaship.github.io/2018/03/12/[DataStructure_002]큐(Queue)/"/>
 
 
 
 
 
-  <title>아카이브 | Just Do it!</title>
+  <title>[DataStructure_002]큐(Queue) | Just Do it!</title>
   
 <script>
   window.fbAsyncInit = function() {
@@ -158,7 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -286,333 +293,234 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://illaship.github.io/2018/03/12/[DataStructure_002]큐(Queue)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="illaShip">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Just Do it!">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">[DataStructure_002]큐(Queue)</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-12T14:20:00+09:00">
+                2018-03-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        음..! 총 8개의 포스트 더 노력해봐요
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/basics/" itemprop="url" rel="index">
+                    <span itemprop="name">basics</span>
+                  </a>
+                </span>
 
-      
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/basics/DataStructure/" itemprop="url" rel="index">
+                    <span itemprop="name">DataStructure</span>
+                  </a>
+                </span>
 
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/12/[DataStructure_002]큐(Queue)/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="https://illaship.github.io/2018/03/12/[DataStructure_002]큐(Queue)/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[DataStructure_003]덱(Deque)/" itemprop="url">
-              
-                <span itemprop="name">[DataStructure_003]덱(Deque)</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T14:26:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[DataStructure_002]큐(Queue)/" itemprop="url">
-              
-                <span itemprop="name">[DataStructure_002]큐(Queue)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T14:20:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[DataStructure_001]스택(Stack)/" itemprop="url">
-              
-                <span itemprop="name">[DataStructure_001]스택(Stack)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T14:06:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[Algorithm_002]그대로 출력하기/" itemprop="url">
-              
-                <span itemprop="name">[Algorithm_002]그대로 출력하기</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T12:56:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p><img src="/images/dataStr/Queue.png" alt="Queue"></p>
+<h1 id="큐-소개"><a href="#큐-소개" class="headerlink" title="큐 소개"></a>큐 소개</h1><ul>
+<li>한쪽 끝에서만 자료를 삽입하고 반대 쪽 끝에서만 삭제할 수 있는 자료구조입니다.</li>
+<li>먼저 넣은 것이 가장 먼저 나오기 때문에 First In First Out(FIFO)라고도 부릅니다.</li>
+</ul>
+<a id="more"></a>
+<p><br></p>
+<h1 id="큐-연산"><a href="#큐-연산" class="headerlink" title="큐 연산"></a>큐 연산</h1><table>
+<thead>
+<tr>
+<th>함수</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>push</td>
+<td>큐에 자료를 삽입하는 연산.</td>
+</tr>
+<tr>
+<td>pop</td>
+<td>큐에서 자료를 삭제하는 연산</td>
+</tr>
+<tr>
+<td>front</td>
+<td>큐의 가장 앞(가장 먼저 삽입)에 있는 자료를 보는 연산.</td>
+</tr>
+<tr>
+<td>back</td>
+<td>큐에서 가장 뒤(가장 나중에 삽입)에 있는 자료를 보는 연산.</td>
+</tr>
+<tr>
+<td>empty</td>
+<td>큐가 비어 있는지 아닌지 보는 연산.</td>
+</tr>
+<tr>
+<td>size</td>
+<td>큐에 저장되어있는 자료의 개수를 보는 연산.</td>
+</tr>
+</tbody>
+</table>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[Algorithm_001]알고리즘 소개/" itemprop="url">
-              
-                <span itemprop="name">[Algorithm_001]알고리즘 소개</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T12:30:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[Hexo_03]테마설정/" itemprop="url">
-              
-                <span itemprop="name">[Hexo_03]테마설정</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T04:27:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/12/[Hexo_02]마크다운/" itemprop="url">
-              
-                <span itemprop="name">[Hexo_02]마크다운(markdown)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T03:56:00+09:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/11/[Hexo_01]소개 및 시작하기/" itemprop="url">
-              
-                <span itemprop="name">[Hexo_01]소개 및 시작하기</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-11T21:35:20+09:00"
-              content="2018-03-11" >
-          03-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/DataStructure/" rel="tag"># DataStructure</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/12/[DataStructure_001]스택(Stack)/" rel="next" title="[DataStructure_001]스택(Stack)">
+                <i class="fa fa-chevron-left"></i> [DataStructure_001]스택(Stack)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/12/[DataStructure_003]덱(Deque)/" rel="prev" title="[DataStructure_003]덱(Deque)">
+                [DataStructure_003]덱(Deque) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -620,6 +528,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div class="fb-comments"
+           data-href="https://illaship.github.io/2018/03/12/[DataStructure_002]큐(Queue)/"
+           data-numposts="10"
+           data-width="100%"
+           data-colorscheme="light">
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -640,8 +562,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            블로그전체보기
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -711,6 +642,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#큐-소개"><span class="nav-number">1.</span> <span class="nav-text">큐 소개</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#큐-연산"><span class="nav-number">2.</span> <span class="nav-text">큐 연산</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -847,6 +794,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

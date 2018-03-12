@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="문제 입력 받은 대로 출력하는 프로그램을 작성하시오.  입력 알파벳 소문자, 대문자, 공백, 숫자로만 이루어져 있다. 각 줄은 100글자를 넘지 않으며, 빈 줄이 주어질 수도 있고, 각 줄의 앞 뒤에 공백이 있을 수도 있다.  출력 입력받은 그대로 출력한다.  문제출처 : 백준온라인저지_11719번_그대로출력하기2">
+<meta name="description" content="문제 입력 받은 대로 출력하는 프로그램을 작성하시오.  입력 알파벳 소문자, 대문자, 공백, 숫자로만 이루어져 있다. 각 줄은 100글자를 넘지 않으며, 빈 줄이 주어질 수도 있고, 각 줄의 앞 뒤에 공백이 있을 수도 있다.  출력 입력받은 그대로 출력한다.  문제출처 : 백준온라인저지-11719번-그대로출력하기2">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Algorithm_002]그대로 출력하기">
 <meta property="og:url" content="https://illaship.github.io/2018/03/12/[Algorithm_002]그대로 출력하기/index.html">
 <meta property="og:site_name" content="Just Do it!">
-<meta property="og:description" content="문제 입력 받은 대로 출력하는 프로그램을 작성하시오.  입력 알파벳 소문자, 대문자, 공백, 숫자로만 이루어져 있다. 각 줄은 100글자를 넘지 않으며, 빈 줄이 주어질 수도 있고, 각 줄의 앞 뒤에 공백이 있을 수도 있다.  출력 입력받은 그대로 출력한다.  문제출처 : 백준온라인저지_11719번_그대로출력하기2">
+<meta property="og:description" content="문제 입력 받은 대로 출력하는 프로그램을 작성하시오.  입력 알파벳 소문자, 대문자, 공백, 숫자로만 이루어져 있다. 각 줄은 100글자를 넘지 않으며, 빈 줄이 주어질 수도 있고, 각 줄의 앞 뒤에 공백이 있을 수도 있다.  출력 입력받은 그대로 출력한다.  문제출처 : 백준온라인저지-11719번-그대로출력하기2">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-03-12T04:20:39.191Z">
+<meta property="og:updated_time" content="2018-03-12T04:59:49.836Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Algorithm_002]그대로 출력하기">
-<meta name="twitter:description" content="문제 입력 받은 대로 출력하는 프로그램을 작성하시오.  입력 알파벳 소문자, 대문자, 공백, 숫자로만 이루어져 있다. 각 줄은 100글자를 넘지 않으며, 빈 줄이 주어질 수도 있고, 각 줄의 앞 뒤에 공백이 있을 수도 있다.  출력 입력받은 그대로 출력한다.  문제출처 : 백준온라인저지_11719번_그대로출력하기2">
+<meta name="twitter:description" content="문제 입력 받은 대로 출력하는 프로그램을 작성하시오.  입력 알파벳 소문자, 대문자, 공백, 숫자로만 이루어져 있다. 각 줄은 100글자를 넘지 않으며, 빈 줄이 주어질 수도 있고, 각 줄의 앞 뒤에 공백이 있을 수도 있다.  출력 입력받은 그대로 출력한다.  문제출처 : 백준온라인저지-11719번-그대로출력하기2">
 
 
 
@@ -425,7 +425,7 @@
 <h1 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h1><ul>
 <li>입력받은 그대로 출력한다.</li>
 </ul>
-<p>문제출처 : <a href="https://www.acmicpc.net/problem/11719" target="_blank" rel="noopener">백준온라인저지_11719번_그대로출력하기2</a><br><a id="more"></a></p>
+<p>문제출처 : <a href="https://www.acmicpc.net/problem/11719" target="_blank" rel="noopener">백준온라인저지-11719번-그대로출력하기2</a><br><a id="more"></a></p>
 <p><br></p>
 <h1 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h1><blockquote>
 <h2 id="방법1-getchar-이용"><a href="#방법1-getchar-이용" class="headerlink" title="방법1 - getchar() 이용"></a>방법1 - getchar() 이용</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">while</span> ((c = getchar()) &amp;&amp; c != EOF) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%c"</span>,c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -478,6 +478,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/12/[DataStructure_001]스택(Stack)/" rel="prev" title="[DataStructure_001]스택(Stack)">
+                [DataStructure_001]스택(Stack) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -564,7 +568,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">포스트</span>
                 </a>
               </div>
@@ -575,7 +579,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">카테고리</span>
                 </a>
               </div>
@@ -586,7 +590,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">태그</span>
                 </a>
               </div>
