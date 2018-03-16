@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[[Java_001]Java Decompiler]]></title>
+    <url>%2F2018%2F03%2F16%2Fjava%2F%5BJava_001%5DJava%20Decompiler%2F</url>
+    <content type="text"><![CDATA[Java Decompiler 소개 Decompiler란? 역컴파일러(영어: Decompiler)는 컴파일러와 반대의 역할을 하는 컴퓨터 프로그램이다. 즉, 이것은 상대적으로 저수준의 추상에 있는 프로그램의 코드를 고수준의 추상으로 변형한다. 역컴파일러는 보통 원본 소스코드로 완벽하게 재구성될 수 없으며, 결과가 매우 다양할 수 있다. 그럼에도 불구하고 이것은 소프트웨어 리버스 엔지니어링에서 매우 중요한 도구이다. 역컴파일러는 실행 파일을 입력으로 갖고, 같은 기능을 하는 소스 코드 파일 즉, 고급 언어로 만든다. 출처 : 위키백과 (https://ko.wikipedia.org/wiki/%EC%97%AD%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC) 쉽게 말하면 … Java 컴파일은 .java파일을 .class실행파일로 변환해준다. .class실행파일 소스가 궁금할 때, .java파일로 변환해주는 것을 Java Decompiler라고 한다. 라이브러리의 소스가 궁금할 때, 유용하다. Java Decompiler 다운로드 및 설치 이클립스와 Java설치 방법은 생략한다. 이클립스를 실행한다. 이클립스 상단Tap에서 Help &gt; Eclipse Marketplace..를 클릭한다. 그리고 Find입력 폼에 Decompiler를 입력 후 검색한다. 우리가 설치하려고 하는 것은 Enhanced Class Decompiler x.x.x이다. install 버튼을 클해서 설치한다. 설치가 마무리 되면, Restart Now를 클릭한다.(아니면, 직접 Eclipse를 Restart를 한다.) Java Decompiler 설정 이클립스 상단Tap 에서 Window &gt; Preferences를 클릭한다. 그 다음, Preferences창에서 General &gt; Editors &gt; File Associations 를 클릭한다. File types: 에서 *.class, *.class without source를 각각 클릭하여, 아래 Associated editors:에 있는 Class Decompiler Viewer를 클릭 후, Default버튼을 클릭하고 Apply후 닫는다.]]></content>
+      <categories>
+        <category>lang</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[[Alogrithm_003]괄호]]></title>
     <url>%2F2018%2F03%2F12%2Falgorithm%2F%5BAlogrithm_003%5D%EA%B4%84%ED%98%B8%2F</url>
     <content type="text"><![CDATA[문제 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다. 입력 입력은 T개의 테스트 데이터로 주어진다. 입력의 첫 번째 줄에는 입력 데이터의 수를 나타내는 정수 T가 주어진다. 각 테스트 데이터의 첫째 줄에는 괄호 문자열이 한 줄에 주어진다. 하나의 괄호 문자열의 길이는 2 이상 50 이하이다. 출력 만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. 출처 백준온라인저지-9012번-괄호 (https://www.acmicpc.net/problem/9012) 풀이 방법 - 스택(Stack) 이용 스택의 마지막에 넣은것이 가장 먼저 나오는 구조를 이용한다. 입력받은 문자열의 길이 만큼 Loop를 돈다. 문자 (를 발견하면 스택(Stack)에 push() 문자 )를 발견하면 스택(Stack)에서 pop() 만약, Loop동안 스택의 길이가 0보다 작아지려 한다면 NO Loop가 끝난 뒤, 스택의 길이가 0이면 YES Loop가 끝난 뒤, 스택의 길이가 0보다 크면 NO1234567891011121314151617181920212223242526272829303132333435363738#include &lt;iostream&gt;#include &lt;string&gt;#include &lt;stack&gt;using namespace std;string isVps(string str) &#123; stack&lt;char&gt; st; for(int i = 0; i &lt; str.length(); i++) &#123; char c = str.at(i); if(c == '(') &#123; st.push(c); &#125; else if(c == ')') &#123; if(st.size() == 0) &#123; return "NO"; &#125; st.pop(); &#125; &#125; if(st.size() == 0) &#123; return "YES"; &#125; else &#123; return "NO"; &#125;&#125;int main() &#123; int t; cin &gt;&gt; t; while(t--) &#123; string str; cin &gt;&gt; str; cout &lt;&lt; isVps(str) &lt;&lt; endl; &#125; return 0;&#125;]]></content>
