@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="문제 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.   입">
+<meta name="description" content="문제  괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.  입">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Alogrithm_003]괄호">
 <meta property="og:url" content="https://illaship.github.io/2018/03/12/algorithm/[Alogrithm_003]괄호/index.html">
 <meta property="og:site_name" content="Just Do it!">
-<meta property="og:description" content="문제 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.   입">
+<meta property="og:description" content="문제  괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.  입">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-03-12T07:14:13.702Z">
+<meta property="og:updated_time" content="2018-03-29T15:51:57.390Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Alogrithm_003]괄호">
-<meta name="twitter:description" content="문제 괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.   입">
+<meta name="twitter:description" content="문제  괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.  입">
 
 
 
@@ -415,39 +415,45 @@
       
 
       
-        <h1 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h1><ul>
+        <h1>문제</h1>
+<ul>
 <li>괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다.</li>
 <li>괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다.</li>
-<li>여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다. </li>
+<li>여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다.</li>
 </ul>
-<h1 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h1><ul>
+<h1>입력</h1>
+<ul>
 <li>입력은 T개의 테스트 데이터로 주어진다.</li>
 <li>입력의 첫 번째 줄에는 입력 데이터의 수를 나타내는 정수 T가 주어진다.</li>
 <li>각 테스트 데이터의 첫째 줄에는 괄호 문자열이 한 줄에 주어진다.</li>
-<li>하나의 괄호 문자열의 길이는 2 이상 50 이하이다. </li>
+<li>하나의 괄호 문자열의 길이는 2 이상 50 이하이다.</li>
 </ul>
-<h1 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h1><ul>
-<li>만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. </li>
+<h1>출력</h1>
+<ul>
+<li>만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다.</li>
 </ul>
-<h1 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h1><ul>
+<h1>출처</h1>
+<ul>
 <li><em>백준온라인저지-9012번-괄호</em> (<a href="https://www.acmicpc.net/problem/9012" target="_blank" rel="noopener">https://www.acmicpc.net/problem/9012</a>)</li>
 </ul>
 <a id="more"></a>
-<p><br></p>
-<h1 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h1><blockquote>
-<h2 id="방법-스택-Stack-이용"><a href="#방법-스택-Stack-이용" class="headerlink" title="방법 - 스택(Stack) 이용"></a>방법 - 스택(Stack) 이용</h2><ol>
-<li><strong>스택의 마지막에 넣은것이 가장 먼저 나오는 구조</strong>를 이용한다.</li>
-<li>입력받은 <strong>문자열의 길이 만큼 Loop</strong>를 돈다.<ul>
-<li>문자 <strong><code>(</code></strong>를 발견하면 <strong>스택(Stack)에 <code>push()</code></strong></li>
-<li>문자 <strong><code>)</code></strong>를 발견하면 <strong>스택(Stack)에서 <code>pop()</code></strong></li>
-<li>만약, Loop동안 <strong>스택의 길이가 0보다 작아</strong>지려 한다면 <code>NO</code></li>
+<h1>풀이</h1>
+<blockquote>
+<h2>방법 - 스택(Stack) 이용</h2>
+</blockquote>
+<ol>
+<li>__스택의 마지막에 넣은것이 가장 먼저 나오는 구조__를 이용한다.</li>
+<li>입력받은 __문자열의 길이 만큼 Loop__를 돈다.
+<ul>
+<li>문자 __<code>(</code>__를 발견하면 <strong>스택(Stack)에 <code>push()</code></strong></li>
+<li>문자 __<code>)</code>__를 발견하면 <strong>스택(Stack)에서 <code>pop()</code></strong></li>
+<li>만약, Loop동안 __스택의 길이가 0보다 작아__지려 한다면 <code>NO</code></li>
 </ul>
 </li>
-<li>Loop가 끝난 뒤, <strong>스택의 길이가 0</strong>이면 <code>YES</code></li>
-<li>Loop가 끝난 뒤, <strong>스택의 길이가 0보다 크면</strong> <code>NO</code><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">isVps</span><span class="params">(<span class="built_in">string</span> str)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; st;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; str.length(); i++) &#123;</span><br><span class="line">        <span class="keyword">char</span> c = str.at(i);</span><br><span class="line">        <span class="keyword">if</span>(c == <span class="string">'('</span>) &#123;</span><br><span class="line">            st.push(c);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(c == <span class="string">')'</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(st.size() == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">"NO"</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            st.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(st.size() == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"YES"</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"NO"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(t--) &#123;</span><br><span class="line">        <span class="built_in">string</span> str;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; str;</span><br><span class="line">            </span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; isVps(str) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>Loop가 끝난 뒤, __스택의 길이가 0__이면 <code>YES</code></li>
+<li>Loop가 끝난 뒤, <strong>스택의 길이가 0보다 크면</strong> <code>NO</code></li>
 </ol>
-</blockquote>
-
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">isVps</span><span class="params">(<span class="built_in">string</span> str)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; st;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; str.length(); i++) &#123;</span><br><span class="line">        <span class="keyword">char</span> c = str.at(i);</span><br><span class="line">        <span class="keyword">if</span>(c == <span class="string">'('</span>) &#123;</span><br><span class="line">            st.push(c);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(c == <span class="string">')'</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(st.size() == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">"NO"</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            st.pop();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(st.size() == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"YES"</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"NO"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(t--) &#123;</span><br><span class="line">        <span class="built_in">string</span> str;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; str;</span><br><span class="line">            </span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; isVps(str) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -641,7 +647,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#문제"><span class="nav-number">1.</span> <span class="nav-text">문제</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#입력"><span class="nav-number">2.</span> <span class="nav-text">입력</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#출력"><span class="nav-number">3.</span> <span class="nav-text">출력</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#출처"><span class="nav-number">4.</span> <span class="nav-text">출처</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#풀이"><span class="nav-number">5.</span> <span class="nav-text">풀이</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#방법-스택-Stack-이용"><span class="nav-number">5.1.</span> <span class="nav-text">방법 - 스택(Stack) 이용</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">문제</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">입력</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">출력</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">출처</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">풀이</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.1.</span> <span class="nav-text">방법 - 스택(Stack) 이용</span></a></li></ol></li></ol></div>
             
 
           </div>
