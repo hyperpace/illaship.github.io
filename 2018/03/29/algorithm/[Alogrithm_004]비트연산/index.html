@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Just Do it!">
 <meta property="og:description" content="비트 소개  컴퓨터에서 사용할 수 있는 최소 단위다. 2진수를 저장하는 단위로 0과 1을 나타낼 수 있다. 8bit == 1byte  비트 연산자    연산자 설명     &amp;amp; 비트 AND   | 비트 OR   ^ 비트 XOR   ~ 비트 NOT   &amp;lt;&amp;lt; 왼쪽으로 시프트   &amp;gt;&amp;gt; 오른쪽으로 시프트">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-03-29T15:48:25.256Z">
+<meta property="og:updated_time" content="2018-03-29T15:57:49.680Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Alogrithm_004]비트연산">
 <meta name="twitter:description" content="비트 소개  컴퓨터에서 사용할 수 있는 최소 단위다. 2진수를 저장하는 단위로 0과 1을 나타낼 수 있다. 8bit == 1byte  비트 연산자    연산자 설명     &amp;amp; 비트 AND   | 비트 OR   ^ 비트 XOR   ~ 비트 NOT   &amp;lt;&amp;lt; 왼쪽으로 시프트   &amp;gt;&amp;gt; 오른쪽으로 시프트">
@@ -457,28 +457,33 @@
 </tbody>
 </table>
 <a id="more"></a>
+<br>
 <h2>AND 연산자(<code>&amp;</code>)</h2>
 <ul>
 <li>두 비트의 값이 모두 1일 때 1이다.</li>
 <li>즉, 두 비트의 값중 하나만 0이라도 0이다.</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0001</span> <span class="number">0001</span> &amp; <span class="number">0000</span> <span class="number">0101</span> = <span class="number">0000</span> <span class="number">0001</span></span><br></pre></td></tr></table></figure>
+<br>
 <h2>OR 연산자(<code>|</code>)</h2>
 <ul>
 <li>두 비트의 값중 하나만 1이라도 1이다.</li>
 <li>즉, 비트0은 영향력이 없다.</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0001</span> <span class="number">0001</span> | <span class="number">0000</span> <span class="number">0101</span> = <span class="number">0001</span> <span class="number">0101</span></span><br></pre></td></tr></table></figure>
-<h2>OR 연산자(<code>^</code>)</h2>
+<br>
+<h2>XOR 연산자(<code>^</code>)</h2>
 <ul>
 <li>두 비트의 값이 서로 다를 때 1이다.</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0001</span> <span class="number">0001</span> ^ <span class="number">0000</span> <span class="number">0101</span> = <span class="number">0001</span> <span class="number">0100</span></span><br></pre></td></tr></table></figure>
+<br>
 <h2>NOT 연산자(<code>~</code>)</h2>
 <ul>
 <li>비트 0은 1로, 비트 1은 0으로 바꾸며 &quot;비트를 뒤집는다&quot;고 한다.</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~ <span class="number">0001</span> <span class="number">0001</span> = <span class="number">1110</span> <span class="number">1110</span></span><br><span class="line">~ <span class="number">0000</span> <span class="number">0101</span> = <span class="number">1111</span> <span class="number">1010</span></span><br></pre></td></tr></table></figure>
+<br>
 <h2>SHIFT 연산자(<code>&lt;&lt;</code>, <code>&gt;&gt;</code>)</h2>
 <ul>
 <li><code>&lt;&lt;</code> 비트의 값을 왼쪽으로 이동. 즉, 우측n개의 비트를 0으로 만든다.</li>
@@ -487,6 +492,7 @@
 <li><code>&gt;&gt;</code> 의 1번 이동은 <code>/2</code></li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0001</span> <span class="number">0001</span> &lt;&lt; <span class="number">3</span> = <span class="number">1000</span> <span class="number">1000</span>  <span class="comment">// 왼쪽으로 3번 이동(17*2*2*2 = 17*2^3)</span></span><br><span class="line"><span class="number">0001</span> <span class="number">0001</span> &lt;&lt; <span class="number">1</span> = <span class="number">0010</span> <span class="number">0010</span>  <span class="comment">// 왼쪽으로 1번 이동(17*2 = 17*2^1)</span></span><br><span class="line"><span class="number">0000</span> <span class="number">0101</span> &gt;&gt; <span class="number">2</span> = <span class="number">0000</span> <span class="number">0001</span>  <span class="comment">// 오른쪽5으로 2번 이동(5/2/2 = 1)</span></span><br></pre></td></tr></table></figure>
+<br>
       
     </div>
     
@@ -676,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">비트 소개</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">비트 연산자</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">AND 연산자(&amp;)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">OR 연산자(|)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">OR 연산자(^)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">NOT 연산자(~)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.5.</span> <span class="nav-text">SHIFT 연산자(&lt;&lt;, &gt;&gt;)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">비트 소개</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">비트 연산자</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">AND 연산자(&amp;)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">OR 연산자(|)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">XOR 연산자(^)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">NOT 연산자(~)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.5.</span> <span class="nav-text">SHIFT 연산자(&lt;&lt;, &gt;&gt;)</span></a></li></ol></li></ol></div>
             
 
           </div>
